@@ -1,31 +1,21 @@
 from turtle import *
 
-speed('slowest')
+speed('fastest')
 
-angle=360/4
+distance=100
+sides=6
 
-fd(40)
-lt(angle)
-fd(40)
-rt(angle)
-fd(40)
-lt(angle)
-fd(40)
-rt(angle)
-fd(40)
-lt(angle)
-fd(40)
-rt(angle)
-fd(40)
-lt(angle)
-fd(40)
-rt(angle)
-fd(40)
-lt(angle)
-fd(40)
-rt(angle)
-fd(40)
-
+for i in range(sides):
+    pencolor('red')
+    fd(distance)
+    rt(360/sides)
+    circle(distance/2)
+    for i in range(sides):
+        pencolor('blue')
+        fd(distance/2)
+        rt(360/sides)
+        dot(10)
+        
 
 hideturtle()
 mainloop()
