@@ -16,6 +16,7 @@ for i in range(sides):
         rt(360/sides)
         dot(10)
         
+        
 
 hideturtle()
 mainloop()
